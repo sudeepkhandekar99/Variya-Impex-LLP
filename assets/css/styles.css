@@ -493,7 +493,7 @@ the website, in dark theme
 
 .product__container{
   padding: 3rem 0;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2.5rem 3rem;
 }
 
@@ -504,7 +504,7 @@ the website, in dark theme
 
 .product__img{
   position: relative;
-  width: 120px;
+  width: 250px;
   justify-self: center;
   margin-bottom: var(--mb-0-75);
   transition: .3s;
@@ -519,6 +519,7 @@ the website, in dark theme
 
 .product__title{
   margin-bottom: .25rem;
+  color: var(--first-color-light);
 }
 
 .product__button{
@@ -887,7 +888,7 @@ the website, in dark theme
     padding: 0 4rem;
   }
   .product__container{
-    grid-template-columns: repeat(2, 170px);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     column-gap: 5rem;
   }
@@ -982,7 +983,7 @@ the website, in dark theme
   }
 
   .steps__container{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .steps__bg{
     padding: 3.5rem 2.5rem;
@@ -996,7 +997,7 @@ the website, in dark theme
   }
   .product__container{
     padding: 4rem 0;
-    grid-template-columns: repeat(3, 185px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem 6rem;
   }
   .product__img{

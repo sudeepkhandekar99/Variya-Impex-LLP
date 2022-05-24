@@ -28,7 +28,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="./index.html" class="nav__link active-link">Home</a>
+                        <a href="./index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="./about.html" class="nav__link">About</a>
@@ -40,7 +40,7 @@
                         <a href="#faqs" class="nav__link">FAQs</a>
                     </li> -->
                     <li class="nav__item">
-                        <a href="./contact.html" class="nav__link">Contact Us</a>
+                        <a href="./contact.html" class="nav__link active-link">Contact Us</a>
                     </li>
                 </ul>
 
@@ -61,81 +61,58 @@
     </header>
 
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="assets/img/home.png" alt="" class="home__img">
+        
 
-                <div class="home__data">
-                    <h1 class="home__title">
-                        Variya <br> Impex LLP
-                    </h1>
-                    <p class="home__description">
-                        one of the leading fruits and vegetable exporters based out of India. We believe in quality, and
-                        have worked hard over the years to procure some of the finest fruits and vegetables available in
-                        the market!
-                    </p>
-                    <a href="./about.html" class="button button--flex">
-                        Know more <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
-                </div>
-
-                <div class="home__social">
-                    <span class="home__social-follow">Follow Us</span>
-
-                    <div class="home__social-links">
-                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section container" id="about">
-            <div class="about__container grid">
-                <img src="assets/img/about.png" alt="" class="about__img">
-
-                <div class="about__data">
-                    <h2 class="section__title about__title">
-                        Who we really are & <br> why choose us
+        <!--==================== CONTACT ====================-->
+        <section class="contact section container" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__box">
+                    <h2 class="section__title">
+                        Reach out to us today <br> via any of the given <br> information
                     </h2>
 
-                    <p class="about__description">
-                        The different types of fruits and vegetables that we export are Alphonso Mangoes, Nashik
-                        Pomegranates, Makhana, Nashik red onions, Green chilies, saffron, and cashews.
-                    </p>
+                    <div class="contact__data">
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Call us for instant support</h3>
+                            <span class="contact__description">
+                                <i class="ri-phone-line contact__icon"></i>
+                                +999 888 777
+                            </span>
+                        </div>
 
-                    <div class="about__details">
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Finest Produce.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Free of harmful chemicals.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Environment friendly.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Fresh right from harvest.
-                        </p>
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Write us by mail</h3>
+                            <span class="contact__description">
+                                <i class="ri-mail-line contact__icon"></i>
+                                user@email.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Email</label>
+                        </div>
+
+                        <div class="contact__content">
+                            <input type="text" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__content contact__area">
+                            <textarea name="message" placeholder=" " class="contact__input"></textarea>
+                            <label for="" class="contact__label">Message</label>
+                        </div>
                     </div>
 
-                    <a href="./products.html" class="button--link button--flex">
-                        Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
-                </div>
+                    <button class="button button--flex">
+                        Send Message
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </form>
             </div>
         </section>
     </main>
