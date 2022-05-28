@@ -65,7 +65,28 @@
         <!--==================== HOME ====================-->
         <section class="home" id="home">
             <div class="home__container container grid">
-                <img src="assets/img/home.png" alt="" class="home__img">
+                <!-- <img src="assets/img/home.png" alt="" class="home__img"> -->
+                <a class="home__img" id="bannerLink" href="./products.html"
+                    onclick="void window.open(this.href); return false;">
+                    <img id="bannerImage" src="./assets/img/home.png" alt="some text" class="home__img">
+                </a>
+                <script>
+                    var links = ["./products.html", "./products.html"];
+                    var images = ["./assets/img/home.png", "./assets/img/home2.png"];
+                    var i = 0;
+                    var renew = setInterval(function () {
+                        if (links.length == i) {
+                            i = 0;
+                        }
+                        else {
+                            document.getElementById("bannerImage").src = images[i];
+                            document.getElementById("bannerLink").href = links[i];
+                            i++;
+
+                        }
+                    }, 2000);
+                </script>
+
 
                 <div class="home__data">
                     <h1 class="home__title">
@@ -141,267 +162,303 @@
         </section>
 
         <!--==================== PRODUCTS ====================-->
-    <section class="product section container" id="products">
-        <h2 class="section__title-center">
-            Our Wide Range of Products
-        </h2>
+        <section class="product section container" id="products">
+            <h2 class="section__title-center">
+                Our Wide Range of Products
+            </h2>
 
-        <!-- <p class="product__description">
+            <!-- <p class="product__description">
             Here are some selected plants from our showroom, all are in excellent
             shape and has a long life span. Buy and enjoy best quality.
         </p> -->
 
-        <div class="product__container grid">
+            <div class="product__container grid">
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product1.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product1.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Mangoes</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Mangoes</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product2.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product2.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Nashik Pomegranates</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Nashik Pomegranates</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product3.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product3.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Makhana</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Makhana</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product4.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product4.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Nashik Red Onions</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Nashik Red Onions</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product5.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product5.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Green Chilies</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Green Chilies</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product6.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product6.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Saffron</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Saffron</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product7.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product7.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Cashews</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Cashews</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product8.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product8.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Cabbage</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Cabbage</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product9.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product9.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Cauliflower</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Cauliflower</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
 
-            <article class="product__card">
+                <article class="product__card">
 
-                <a href="./products.html" class="product__img"><img src="assets/img/product10.png" alt="" class="product__img"></a>
+                    <a href="./products.html" class="product__img"><img src="assets/img/product10.png" alt=""
+                            class="product__img"></a>
 
-                <h3 class="product__title">Turmeric</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+                    <h3 class="product__title">Turmeric</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
 
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
-
-            <article class="product__card">
-
-                <a href="./products.html" class="product__img"><img src="assets/img/product11.png" alt="" class="product__img"></a>
-
-                <h3 class="product__title">Capsicum</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
-
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
-
-            <article class="product__card">
-
-                <a href="./products.html" class="product__img"><img src="assets/img/product12.png" alt="" class="product__img"></a>
-
-                <h3 class="product__title">Baby Corn</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
-
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
-
-            <article class="product__card">
-
-                <a href="./products.html" class="product__img"><img src="assets/img/product13.png" alt="" class="product__img"></a>
-
-                <h3 class="product__title">Garlic</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
-
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
-
-            <article class="product__card">
-
-                <a href="./products.html" class="product__img"><img src="assets/img/product14.png" alt="" class="product__img"></a>
-
-                <h3 class="product__title">Brinjal</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
-
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
-
-            <article class="product__card">
-
-                <a href="./products.html" class="product__img"><img src="assets/img/product15.png" alt="" class="product__img"></a>
-
-                <h3 class="product__title">Beetroot</h3>
-                <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
-
-                <a href="./contact.html">
-                    <button class="button--flex product__button">
-                        <i class='bx bxs-phone-call'></i>
-                    </button>
-                </a>
-            </article>
-        </div>
-    </section>
-
-    <!--==================== STEPS ====================-->
-    <section class="steps section container">
-        <div class="steps__bg">
-            <h2 class="section__title-center steps__title">
-                Certifications
-            </h2>
-
-            <div class="steps__container grid">
-                <div class="steps__card">
-                    <div class="steps__card-number">01</div>
-                    <h3 class="steps__card-title">Apeda Certificate</h3>
-                    <p class="steps__card-description">
-                        <a target="_blank" href="https://drive.google.com/file/d/1q-V_kLxvsrgEXMmmBBJtFL-hrmue0WAB/view?usp=sharing" style="text-decoration:none; color:white; ">Click here to view.</a>
-                    </p>
-                </div>
-
-                <div class="steps__card">
-                    <div class="steps__card-number">02</div>
-                    <h3 class="steps__card-title">IEC Certificate</h3>
-                    <p class="steps__card-description">
-                        <a target="_blank" href="https://drive.google.com/file/d/1PTHuQPT43dAO_nXz7xXMGWEEvVz21xs1/view?usp=sharing" style="text-decoration:none; color:white; ">Click here to view.</a>
-                    </p>
-                </div>
-
-                <div class="steps__card">
-                    <div class="steps__card-number">03</div>
-                    <h3 class="steps__card-title">CRES</h3>
-                    <p class="steps__card-description">
-                        <a target="_blank" href="https://drive.google.com/file/d/1HdZXSc_ybpe3l83Lm9naL38s84uAv6x1/view?usp=sharing" style="text-decoration:none; color:white; ">Click here to view.</a>
-                    </p>
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
+
+                <article class="product__card">
+
+                    <a href="./products.html" class="product__img"><img src="assets/img/product11.png" alt=""
+                            class="product__img"></a>
+
+                    <h3 class="product__title">Capsicum</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
+
+                <article class="product__card">
+
+                    <a href="./products.html" class="product__img"><img src="assets/img/product12.png" alt=""
+                            class="product__img"></a>
+
+                    <h3 class="product__title">Baby Corn</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
+
+                <article class="product__card">
+
+                    <a href="./products.html" class="product__img"><img src="assets/img/product13.png" alt=""
+                            class="product__img"></a>
+
+                    <h3 class="product__title">Garlic</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
+
+                <article class="product__card">
+
+                    <a href="./products.html" class="product__img"><img src="assets/img/product14.png" alt=""
+                            class="product__img"></a>
+
+                    <h3 class="product__title">Brinjal</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
+
+                <article class="product__card">
+
+                    <a href="./products.html" class="product__img"><img src="assets/img/product15.png" alt=""
+                            class="product__img"></a>
+
+                    <h3 class="product__title">Beetroot</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
+
+                <article class="product__card">
+
+                    <a href="./products.html" class="product__img"><img src="assets/img/product16.png" alt=""
+                            class="product__img"></a>
+
+                    <h3 class="product__title">Tomatoes</h3>
+                    <a href="./contact.html"><span class="product__price">Enquire now ></span></a>
+
+                    <a href="./contact.html">
+                        <button class="button--flex product__button">
+                            <i class='bx bxs-phone-call'></i>
+                        </button>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== STEPS ====================-->
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h2 class="section__title-center steps__title">
+                    Certifications
+                </h2>
+
+                <div class="steps__container grid">
+                    <div class="steps__card">
+                        <div class="steps__card-number">01</div>
+                        <h3 class="steps__card-title">Apeda Certificate</h3>
+                        <p class="steps__card-description">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1q-V_kLxvsrgEXMmmBBJtFL-hrmue0WAB/view?usp=sharing"
+                                style="text-decoration:none; color:white; ">Click here to view.</a>
+                        </p>
+                    </div>
+
+                    <div class="steps__card">
+                        <div class="steps__card-number">02</div>
+                        <h3 class="steps__card-title">IEC Certificate</h3>
+                        <p class="steps__card-description">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1PTHuQPT43dAO_nXz7xXMGWEEvVz21xs1/view?usp=sharing"
+                                style="text-decoration:none; color:white; ">Click here to view.</a>
+                        </p>
+                    </div>
+
+                    <div class="steps__card">
+                        <div class="steps__card-number">03</div>
+                        <h3 class="steps__card-title">CRES</h3>
+                        <p class="steps__card-description">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1HdZXSc_ybpe3l83Lm9naL38s84uAv6x1/view?usp=sharing"
+                                style="text-decoration:none; color:white; ">Click here to view.</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 
-    
+
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">

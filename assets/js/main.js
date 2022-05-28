@@ -1,3 +1,30 @@
+// IMAGE SWITCH
+// Initialize images in an array
+var picPaths = ['../img/about.png','../img/home.png'];
+// An index to track the contender image 
+var imageIndex = 0;
+var bannerImage; 
+
+// An event callback for starting the interval
+function startInterval() {
+ setInterval(displayNextImage, 3000);
+}
+
+function displayNextImage() {
+  bannerImage.src = picPaths[imageIndex];
+  if(imageIndex === (picPaths.length-1)) {
+    imageIndex = 0;
+  }
+  else {
+    imageIndex = imageIndex + 1; // It can be replaced with imageIndex ++  
+  }
+}
+
+window.onload=function() {
+ bannerImage = document.getElementById('imgBanner');
+ startInterval();
+}
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -140,3 +167,4 @@ sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+
