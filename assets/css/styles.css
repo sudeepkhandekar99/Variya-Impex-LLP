@@ -881,7 +881,7 @@ the website, in dark theme
 /* For medium devices */
 @media screen and (min-width: 576px){
   .steps__container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .product__description{
@@ -983,7 +983,7 @@ the website, in dark theme
   }
 
   .steps__container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .steps__bg{
     padding: 3.5rem 2.5rem;
