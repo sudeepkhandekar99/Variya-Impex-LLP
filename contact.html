@@ -95,7 +95,7 @@
                     </div>
                 </div>
 
-                <form name="contact" method="POST" data-netlify="true" class="contact__form">
+                <!-- <form name="contact" method="POST" data-netlify="true" class="contact__form">
                     <div class="contact__inputs">
                         <div class="contact__content">
                             <input type="text" placeholder=" " class="contact__input">
@@ -132,6 +132,22 @@
                         Send Message
                         <i class="ri-arrow-right-up-line button__icon" type="submit" value="Send"></i>
                     </button>
+                </form> -->
+                <form method="post" action="#" data-netlify="true" data-netlify="true">
+                    <div class="fields">
+                        <div class="field half">
+                            <input type="text" name="name" id="name" placeholder="Name" />
+                        </div>
+                        <div class="field half">
+                            <input type="email" name="email" id="email" placeholder="Email" />
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" placeholder="Phone number"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send" class="primary" /></li>
+                    </ul>
                 </form>
             </div>
         </section>
