@@ -129,25 +129,43 @@
                     </div>
                         <input type="submit" value="Send" />
                 </form>  -->
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                      <label>Your Name: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                      <label>Your Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                      <label>Your Role: <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                      </select></label>
-                    </p>
-                    <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit">Send</button>
-                    </p>
+                <form name="contact" method="POST" data-netlify="true" class="contact__form">  
+                      <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="text" name="name" class="contact__input" />
+                            <label for="" class="contact__label">Full Name</label>
+                          </div>
+                        
+                          <div class="contact__content">
+                            <input type="text" name="name" class="contact__input" />
+                            <label for="" class="contact__label">Phone Number</label>
+                          </div>
+
+                          <div class="contact__content">
+                            <input type="text" name="name" class="contact__input" />
+                            <label for="" class="contact__label">Email</label>
+                          </div>
+
+                          <div class="contact__content">
+                            <input type="text" name="name" class="contact__input" />
+                            <label for="" class="contact__label">Export to Country</label>
+                          </div>
+
+                          <div class="contact__content">
+                            <input type="text" name="name" class="contact__input" />
+                            <label for="" class="contact__label">Port / Freight</label>
+                          </div>
+
+                          <div class="contact__content">
+                            <textarea type="text" name="name" class="contact__input"></textarea>
+                            <label for="" class="contact__label">Message</label>
+                          </div>
+                      </div>
+                   
+                    <br>
+                    
+                      <button type="submit" class="primary button button--flex">Send</button>
+                    
                   </form>
             </div>
         </section>
